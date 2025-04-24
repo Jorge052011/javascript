@@ -5,33 +5,51 @@ alert(mensaje) */
 
 
     let nota1 = prompt('ingrese la nota 1 de html :')    
-    document.getElementById('nota1html').textContent = nota1
+    nota1 = parseFloat(nota1)
+    document.getElementById('nota1html').textContent = nota1.toFixed(2)
 
 
-    let nota2 = prompt('ingrese la nota 2 de html :')    
-    document.getElementById('nota2html').textContent = nota2
+    let nota2 = prompt('ingrese la nota 2 de html :') 
+    nota2 = parseFloat(nota2)
+    document.getElementById('nota2html').textContent = nota2.toFixed(2)
 
-    let nota3 = prompt('ingrese la nota 3 de html:')    
-    document.getElementById('nota3html').textContent = nota3
-
-
-    let nota1css = prompt('ingrese la nota 1 de css:')    
-    document.getElementById('nota1css').textContent = nota1css
+    let nota3 = prompt('ingrese la nota 3 de html:') 
+    nota3 = parseFloat(nota3)
+    document.getElementById('nota3html').textContent = nota3.toFixed(2)
 
 
-    let nota2css = prompt('ingrese la nota 2 de css:')    
-    document.getElementById('nota2css').textContent = nota2css
-
-    let nota3css = prompt('ingrese la nota 3 de css :')    
-    document.getElementById('nota3css').textContent = nota3css
+    let nota1css = prompt('ingrese la nota 1 de css:')
+    nota1css = parseFloat(nota1css)    
+    document.getElementById('nota1css').textContent = nota1css.toFixed(2)
 
 
-    let nota1js = prompt('ingrese la nota 1 de js:')    
-    document.getElementById('nota1js').textContent = nota1js
+    let nota2css = prompt('ingrese la nota 2 de css:')  
+    nota2css = parseFloat(nota2css)      
+    document.getElementById('nota2css').textContent = nota2css.toFixed(2)
+
+    let nota3css = prompt('ingrese la nota 3 de css :')  
+    nota3css = parseFloat(nota3css)      
+    document.getElementById('nota3css').textContent = nota3css.toFixed(2)
 
 
-    let nota2js = prompt('ingrese la nota 2 de js :')    
-    document.getElementById('nota2js').textContent = nota2js
+    let nota1js = prompt('ingrese la nota 1 de js:')  
+    nota1js = parseFloat(nota1js)  
+    document.getElementById('nota1js').textContent = nota1js.toFixed(2)
 
-    let nota3js = prompt('ingrese la nota 3 de js:')    
-    document.getElementById('nota3js').textContent = nota3js
+
+    let nota2js = prompt('ingrese la nota 2 de js :')   
+    nota2js = parseFloat(nota2js)  
+    document.getElementById('nota2js').textContent = nota2js.toFixed(2)
+
+    let nota3js = prompt('ingrese la nota 3 de js:')  
+    nota3js = parseFloat(nota3js)   
+    document.getElementById('nota3js').textContent = nota3js.toFixed(2)
+
+    var promediohtml = (nota1 + nota2 +nota3) / 3
+    document.getElementById("promediohtml").textContent = promediohtml.toFixed(2)
+
+    var promediocss = (nota1css + nota2css +nota3css) / 3
+    document.getElementById("promediocss").textContent = promediocss.toFixed(2)
+
+    var promediojs = (nota1js + nota2js +nota3js) / 3
+    document.getElementById("promediojs").textContent = promediojs.toFixed(2)
